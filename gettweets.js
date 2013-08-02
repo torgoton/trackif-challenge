@@ -60,7 +60,7 @@ $(document).ready(function() {
               $.each(reply.statuses, function(i, tweet) {
                 // Uncomment line below to show tweet data in Fire Bug console
                 // Very helpful to find out what is available in the tweet objects
-                console.log(tweet);
+                // console.log(tweet);
 
                 // Before we continue we check that we got data
                 if(tweet.text !== undefined) {
