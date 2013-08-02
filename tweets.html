@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get Some Tweets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Get Some Tweets</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <p style="padding-top:60px"> </p>
+          <h3>Search for tweets containing...</h3>
+          <input type="text" id="search_input" />
+          <br/><br/>
+          Within <input type="text" id="distance" /> miles of me
+          <h6>Leave blank for unlimited distance</h6>
+          <p>You are at <span id="myLocation">(location not found)</span></p>
+          <button id="getTweets">Request Tweets</button>
+
+          <table class="table table-striped" id="tweets_container">
+            <tbody></tbody>
+          </table>          
+          <div id="tweet_container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript plugins (requires jQuery) -->
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+    <script src="sha1.js"></script>
+    <script src="codebird.js"></script>
+    <script src="gettweets.js"></script>
+  </body>
+</html>
+
